@@ -9,8 +9,8 @@
         "baseUrl": ".",
         "lib": ["es2020", "dom"],
         "paths": {
-        "N": ["node_modules/@hitc/netsuite-types/N"],
-        "N/*": ["node_modules/@hitc/netsuite-types/N/*"]
+            "N": ["node_modules/@hitc/netsuite-types/N"],
+            "N/*": ["node_modules/@hitc/netsuite-types/N/*"]
         },
         "outDir": "src/FileCabinet/SuiteScripts/EmailToCSV"
     },
