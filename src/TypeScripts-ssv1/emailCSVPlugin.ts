@@ -11,6 +11,7 @@ function process(email) {
         const fileId = nlapiSubmitFile(file);
         nlapiLogExecution('debug', 'process', `Saved file: ${fileId}.`);
         const custscript_trigger_csv_import_mapping_id = 'custimport_14_t1264278_294'; // TODO: Use your own saved CSV Import!
-        nlapiScheduleScript('customscript_trigger_csv_import_schedule', '', { custscript_trigger_csv_import_file: fileId,  custscript_trigger_csv_import_mapping_id });
+        const parameters = { custscript_trigger_csv_import_file: fileId,  custscript_trigger_csv_import_mapping_id };
+        nlapiScheduleScript('customscript_trigger_csv_import_schedule', 'customdeploy1', parameters);
     }
 }
